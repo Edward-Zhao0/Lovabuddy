@@ -81,10 +81,6 @@ module.exports = {
         { 
           from: 'src/content/content.css', 
           to: 'content.css' 
-        },
-        {
-          from: 'public/avatarimages',
-          to: 'avatarimages'
         }
       ]
     })
