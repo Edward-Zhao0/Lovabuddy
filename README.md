@@ -1,4 +1,4 @@
-# LovaBuddy
+# LovaBridge
 
 A Chrome extension that provides an interactive accessibility layer designed to help children with special needs use the Lovable website builder. The extension appears as a popup overlay on top of the Lovable interface and guides users through expressing creative ideas and refining them into structured prompts.
 
