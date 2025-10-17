@@ -17,9 +17,11 @@ const App: React.FC = () => {
               try {
                 chrome.scripting.executeScript(
                   { target: { tabId }, files: ['content.js'] },
-                  () => chrome.tabs.sendMessage(tabId, { action: 'toggleOverlay' })
+                  () => chrome.tabs.sendMessage(tabId, { action: 'toggleOverlay' }, () => window.close())
                 );
               } catch {}
+            } else {
+              window.close();
             }
           });
         }
@@ -45,3 +47,5 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+
